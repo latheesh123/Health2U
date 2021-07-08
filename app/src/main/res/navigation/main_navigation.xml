@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/destination_login">
+
+    <fragment
+        android:id="@+id/destination_login"
+        android:name="com.example.health2u.ui.login.LoginFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_destination_search_to_destination_maps"
+            app:destination="@id/destination_register" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_register"
+        android:name="com.example.health2u.ui.register.RegisterFragment"
+        tools:layout="@layout/register_fragment" />
+
+
+    <fragment
+        android:id="@+id/destination_info"
+        android:name="com.example.health2u.ui.userInfo.UserInfo"
+        tools:layout="@layout/user_info_fragment" />
+
+
+    <fragment
+        android:id="@+id/destination_home"
+        android:name="com.example.health2u.ui.homeScreen.HomeScreen"
+        tools:layout="@layout/home_screen_fragment" />
+
+
+
+    <fragment
+        android:id="@+id/destination_guide"
+        android:name="com.example.health2u.ui.NewsFragment"
+        tools:layout="@layout/news_fragment" />
+
+
+    <fragment
+        android:id="@+id/destination_test_centers"
+        android:name="com.example.health2u.ui.testcenter.TestCenterFragment"
+        tools:layout="@layout/test_center_fragment" />
+
+
+    <fragment
+        android:id="@+id/destination_settings"
+        android:name="com.example.health2u.ui.settings.SettingsFragment"
+        tools:layout="@layout/settings_fragment" />
+
+
+</navigation>

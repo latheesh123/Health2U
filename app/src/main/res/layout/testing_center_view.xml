@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="10dp"
+    app:cardCornerRadius="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="textStart"
+            android:text="Covid-19"
+            android:singleLine="true"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/address_one"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:text="Rating"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/title_name" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/outline_navigate_next_black_48"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_name" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/address_two"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:text="Open"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/address_one" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:text="Children are though to make up a merge"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/address_two" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
