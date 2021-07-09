@@ -51,4 +51,11 @@
         tools:layout="@layout/settings_fragment" />
 
 
+    <fragment
+        android:id="@+id/destination_vaccine_center"
+        android:name="com.example.health2u.ui.vaccinecenter.VacccineFragment"
+        tools:layout="@layout/vacccine_fragment" />
+
+
+
 </navigation>

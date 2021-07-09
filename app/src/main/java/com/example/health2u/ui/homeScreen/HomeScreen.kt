@@ -72,7 +72,10 @@ class HomeScreen : Fragment() {
             intent.data = Uri.parse("tel:"+emergencyNumber)
             startActivity(intent)
         }
-        vaccine_button.setOnClickListener { }
+        vaccine_button.setOnClickListener {
+
+findNavController().navigate(R.id.destination_vaccine_center)
+        }
         guide_button.setOnClickListener { findNavController().navigate(R.id.destination_guide) }
         symptoms_button.setOnClickListener { }
         tracking_button.setOnClickListener { }
